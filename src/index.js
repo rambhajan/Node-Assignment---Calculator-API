@@ -118,7 +118,7 @@ app.post('/multiply', (req, res) => {
 app.post('/divide', (req, res) => {
     const firstNum = req.body.num1;
     const secondNum = req.body.num2;
-    console.log(typeof firstNum + ' ' + typeof secondNum);
+    //console.log(typeof firstNum + ' ' + typeof secondNum);
     if(secondNum === 0){
         res.send({
             status: 'error',
