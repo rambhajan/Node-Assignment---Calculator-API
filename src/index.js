@@ -71,6 +71,11 @@ app.post('/sub', (req, res) => {
             status: 'error',
             message: 'Overflow',
         });
+     } else if(firstNum - secondNum < minLimit){
+            res.send({
+                status: 'error',
+                message: 'Underflow',
+            });
     }  else {
         res.send({
             status: 'Success',
